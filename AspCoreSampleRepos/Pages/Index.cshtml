@@ -1,0 +1,21 @@
+﻿@page
+@inherits AspCoreSampleRepos.Infra.RazorPages.BaseRazorPage
+@model IndexModel
+@{
+    Console.WriteLine($"PageId={PageId}");
+    ViewData["Title"] = "Home page";
+}
+
+<form method="post">
+
+    <div>
+        <label>This is the page id</label>
+        <br />
+        <label type="text">@PageId</label>
+    </div>
+
+    <div>
+        <button type="submit">Post</button>
+    </div>
+
+</form>
